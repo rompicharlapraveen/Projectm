@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>hospital</title>
+<script language="javascript" type="text/javascript" src="validate2.js">
+  </script>
+  <style>
+h1 {
+  text-shadow: 4px 4px 6px #ff00cc;
+}
+</style>
+<style>
+     .roundtable{
+         background:rgba(0,255,255,0.4);
+         border-radius:10px;
+      }
+</style>
+<style>
+.button {
+  background-color: blue;
+  border: none;
+  border-radius:10px;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body background="h1.png">
+<h1 align="center">HOSPITAL MANAGEMENT SYSTEM</h1><hr></center>
+<marquee><font color="red">NOTE:Availability timings of docters 10AM to 1PM (Lunch break 1PM to 2PM) 2PM to 9PM</font></marquee>
+<center><h2>Booking An Appointment</h2></center>
+<form name="f3" action="insert2.php" method="POST">
+<center>
+<table class="roundtable" width="900px" height="500px">
+<tr>
+<td><b>Doctor-Specialisation:</b><font color="red">*</font></td><td>&nbsp;<select name="problem">
+    <option selected>Dr.Praveen Rompicharla(Cardiologist)</option>
+    <option>Dr.Avinash Maddila(Podiatrist)</option>
+    <option>Dr.Mahesh Sampath Goteti(Nephrologist)</option>
+    <option>Dr.Prasanna Kumar(Neurologist)</option>
+    <option>Dr.Srinivas Srinivasula(Surgeon)</option>
+    <option>Dr.Savitri Sudarsanam(Normal Cases)</option>
+    </select></td>
+<td><b>Date:</b><font color="red">*</font></td><td>&nbsp;<input type="date" name="date"></input></td>
+</tr>
+<tr>
+<td><b>Patient Name:</b><font color="red">*</font></td><td>&nbsp;<input type="text" name="patientname"  placeholder="PatientName"/></td>
+<td><b>Gender:</b><font color="red">*</font></td><td>&nbsp;<input type="radio" name="gender" value="male"checked><b>Male</b></input>
+<input type="radio" name="gender" value="female"><b>Female</b></input>
+</td>
+</tr>
+<tr>
+<td><b>Age:</b><font color="red">*</font></td><td>&nbsp;<input type="text" name="age" placeholder="Age"></input></td>
+<td><b>Patient-City:</b><font color="red">*</font></td><td>&nbsp;<input type="text" name="city" placeholder="Patient-City"></input></td>
+</tr>
+<tr>
+<td><b>Hospital-Location:</b><font color="red">*</font></td><td>&nbsp;<input type="text" name="location" placeholder="Hospital-Location"></input></td>
+<td><b>Hospital-Name:</b><font color="red">*</font></td><td>&nbsp;<select name="hname">
+	<option>Bhimavaram Hospitals(Bhimavaram)</option>
+        <option>Bhimavaram Hospitals(Eluru)</option>
+        <option>Bhimavaram Hospitals(Palakollu)</option>
+        <option>Bhimavaram Hospitals(Narsapur)</option>
+        <option>Bhimavaram Hospitals(Tanuku)</option>
+</select>
+</tr>
+</table>
+</center>
+<center>
+<table>
+<tr>
+<td><center><input type="submit" class="button" value="Submit" onClick="return validate2()"></center></td>
+<td><center><button type="reset" class="button">Reset</center></td>
+<td><center><a href="main.html" class="button">Cancel</a></center></td>
+</tr>
+</table>
+</center>
+</form>
+</body>
+</html>
+
